@@ -38,9 +38,13 @@ const LoginForm = ({ userType }) => {
         className="input w-full"
         required
       />
-      <button type="submit" className="btn-primary w-full">
-        Login
-      </button>
+      <button
+  type="submit"
+  className="w-full bg-purple-600 text-white py-3 px-6 rounded-md font-medium text-base hover:bg-purple-700 transition-colors duration-300"
+>
+  Login
+</button>
+
     </form>
   );
 };

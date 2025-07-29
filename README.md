@@ -1,12 +1,30 @@
-# React + Vite
+# AgriConnect - Agricultural Marketplace Platform
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Overview
+AgriConnect is a modern web application that connects farmers directly with buyers in the agricultural marketplace. Built with React and powered by a sleek UI using TailwindCSS, it facilitates seamless trading of agricultural products.
 
-Currently, two official plugins are available:
+## Key Features
+- **Multi-User System**: Distinct interfaces for farmers, buyers, and administrators
+- **Product Management**: Farmers can list, edit, and manage their agricultural products
+- **Real-time Marketplace**: Buyers can browse, search, and purchase products
+- **Order Management**: Complete order lifecycle from placement to delivery
+- **Interactive Chat**: Direct communication between buyers and farmers
+- **Admin Dashboard**: Comprehensive platform management and monitoring
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Tech Stack
+- React (v19)
+- TailwindCSS
+- Vite
+- Context API for state management
+- Lucide React for icons
 
-## Expanding the ESLint configuration
+## Getting Started
+```bash
+# Install dependencies
+npm install
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+# Run development server
+npm run dev
+
+# Build for production
+npm run build
