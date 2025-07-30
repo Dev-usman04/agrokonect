@@ -18,21 +18,21 @@ const AuthContainer = () => {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 relative overflow-hidden">
-      {/* Animated Background Elements */}
+      
       <div className="absolute inset-0">
         <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-emerald-500/10 rounded-full blur-3xl animate-pulse"></div>
         <div className="absolute bottom-1/4 right-1/4 w-80 h-80 bg-cyan-500/10 rounded-full blur-3xl animate-pulse delay-1000"></div>
         <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-64 h-64 bg-violet-500/10 rounded-full blur-3xl animate-pulse delay-500"></div>
       </div>
 
-      {/* Floating Particles */}
+      
       <div className="absolute top-20 left-20 w-2 h-2 bg-emerald-400 rounded-full animate-bounce"></div>
       <div className="absolute top-40 right-32 w-1 h-1 bg-cyan-400 rounded-full animate-ping"></div>
       <div className="absolute bottom-32 left-1/3 w-3 h-3 bg-violet-400 rounded-full animate-pulse"></div>
       <div className="absolute top-3/4 right-20 w-1 h-1 bg-amber-400 rounded-full animate-bounce delay-300"></div>
 
       <div className="relative z-10 container mx-auto px-4 py-12">
-        {/* Header Section */}
+       
         <div className="text-center mb-12">
           <div className="inline-flex items-center justify-center w-20 h-20 bg-gradient-to-br from-emerald-500 to-cyan-500 rounded-2xl mb-6 shadow-2xl shadow-emerald-500/25">
             <Sprout className="w-10 h-10 text-white" />
@@ -48,13 +48,13 @@ const AuthContainer = () => {
           </div>
         </div>
 
-        {/* Auth Card */}
+        
         <div className="max-w-lg mx-auto relative group">
-          {/* Card Glow Effect */}
+         
           <div className="absolute inset-0 bg-gradient-to-r from-emerald-500/20 via-cyan-500/20 to-violet-500/20 rounded-3xl blur-2xl group-hover:blur-3xl transition-all duration-500"></div>
           
           <div className="relative bg-slate-800/40 backdrop-blur-xl border border-slate-700/50 rounded-3xl p-8 shadow-2xl">
-            {/* Tab Navigation */}
+          
             <div className="relative mb-8">
               <div className="flex bg-slate-700/50 rounded-2xl p-2 backdrop-blur-sm border border-slate-600/30">
                 <button
@@ -86,7 +86,7 @@ const AuthContainer = () => {
               </div>
             </div>
 
-            {/* User Type Selector */}
+            
             <div className="mb-8">
               <label className="block text-sm font-semibold text-slate-300 mb-3">
                 Select User Type
@@ -105,7 +105,7 @@ const AuthContainer = () => {
                   <ChevronDown className={`w-5 h-5 text-slate-400 transition-transform duration-200 ${dropdownOpen ? 'rotate-180' : ''}`} />
                 </button>
 
-                {/* Dropdown Menu */}
+               
                 {dropdownOpen && (
                   <div className="absolute top-full left-0 right-0 mt-2 bg-slate-800/90 backdrop-blur-xl border border-slate-600/50 rounded-xl overflow-hidden shadow-2xl z-20">
                     {userTypes.map((type) => (
@@ -133,7 +133,7 @@ const AuthContainer = () => {
               </div>
             </div>
 
-            {/* Form Container */}
+           
             <div className="relative">
               <div className="absolute inset-0 bg-gradient-to-r from-slate-700/10 to-slate-600/10 rounded-2xl blur-sm"></div>
               <div className="relative">
@@ -147,7 +147,7 @@ const AuthContainer = () => {
           </div>
         </div>
 
-        {/* Footer */}
+       
         <div className="text-center mt-12">
           <p className="text-slate-400 text-sm">
             © 2025 AgriConnect. Revolutionizing agriculture through technology.
@@ -155,7 +155,7 @@ const AuthContainer = () => {
         </div>
       </div>
 
-      {/* Click outside to close dropdown */}
+    
       {dropdownOpen && (
         <div 
           className="fixed inset-0 z-10" 

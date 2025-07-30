@@ -5,7 +5,7 @@ const ProductCard = ({ product, showActions = true, onOrder, onChat, onEdit, onD
   const [isHovered, setIsHovered] = useState(false);
   const [isLiked, setIsLiked] = useState(false);
 
-  // Generate star rating display
+  
   const renderStars = (rating) => {
     const stars = [];
     const fullStars = Math.floor(rating);
@@ -39,13 +39,13 @@ const ProductCard = ({ product, showActions = true, onOrder, onChat, onEdit, onD
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
-      {/* Card Glow Effect */}
+     
       <div className="absolute inset-0 bg-gradient-to-r from-emerald-500/20 via-cyan-500/20 to-violet-500/20 rounded-3xl blur-xl opacity-0 group-hover:opacity-100 transition-all duration-500"></div>
       
-      {/* Main Card */}
+   
       <div className="relative bg-slate-800/40 backdrop-blur-xl border border-slate-700/50 rounded-3xl overflow-hidden hover:border-slate-600/50 transition-all duration-300 hover:transform hover:scale-105">
         
-        {/* Image Container */}
+    
         <div className="relative overflow-hidden">
           <img 
             src={product.image}
@@ -53,10 +53,9 @@ const ProductCard = ({ product, showActions = true, onOrder, onChat, onEdit, onD
             className="w-full h-48 object-cover transition-transform duration-500 group-hover:scale-110"
           />
           
-          {/* Image Overlay */}
+       
           <div className="absolute inset-0 bg-gradient-to-t from-slate-900/60 via-transparent to-transparent"></div>
-          
-          {/* Top Actions */}
+         
           <div className="absolute top-4 right-4 flex space-x-2">
             <button
               onClick={() => setIsLiked(!isLiked)}
@@ -73,7 +72,7 @@ const ProductCard = ({ product, showActions = true, onOrder, onChat, onEdit, onD
             </button>
           </div>
 
-          {/* Stock Badge */}
+         
           <div className="absolute top-4 left-4">
             <div className={`px-3 py-1 rounded-full text-xs font-semibold backdrop-blur-md ${
               product.quantity > 50 
@@ -86,7 +85,7 @@ const ProductCard = ({ product, showActions = true, onOrder, onChat, onEdit, onD
             </div>
           </div>
 
-          {/* Rating Badge */}
+         
           <div className="absolute bottom-4 left-4">
             <div className="flex items-center space-x-1 bg-slate-800/80 backdrop-blur-md rounded-full px-3 py-1">
               <div className="flex items-center space-x-1">
@@ -97,9 +96,9 @@ const ProductCard = ({ product, showActions = true, onOrder, onChat, onEdit, onD
           </div>
         </div>
 
-        {/* Card Content */}
+      
         <div className="p-6 space-y-4">
-          {/* Product Name and Price */}
+          
           <div className="space-y-2">
             <h4 className="font-bold text-xl text-white group-hover:text-emerald-400 transition-colors duration-200">
               {product.name}
@@ -114,7 +113,7 @@ const ProductCard = ({ product, showActions = true, onOrder, onChat, onEdit, onD
             </div>
           </div>
 
-          {/* Product Details */}
+          
           <div className="space-y-3">
             <div className="flex items-center justify-between">
               <span className="text-slate-400 text-sm">Available Quantity</span>
@@ -138,7 +137,7 @@ const ProductCard = ({ product, showActions = true, onOrder, onChat, onEdit, onD
             )}
           </div>
 
-          {/* Progress Bar for Quantity */}
+          
           <div className="space-y-2">
             <div className="flex justify-between items-center">
               <span className="text-xs text-slate-500">Stock Level</span>
@@ -158,7 +157,7 @@ const ProductCard = ({ product, showActions = true, onOrder, onChat, onEdit, onD
             </div>
           </div>
 
-          {/* Action Buttons */}
+         
           {showActions && (
             <div className="flex space-x-3 pt-2">
               {onOrder && (
@@ -203,7 +202,7 @@ const ProductCard = ({ product, showActions = true, onOrder, onChat, onEdit, onD
           )}
         </div>
 
-        {/* Hover Effect Overlay */}
+      
         {isHovered && (
           <div className="absolute inset-0 bg-gradient-to-t from-slate-900/20 to-transparent pointer-events-none rounded-3xl"></div>
         )}

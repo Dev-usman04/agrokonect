@@ -10,7 +10,7 @@ export const useAuth = () => {
     setLoading(true);
     setError(null);
     try {
-      // Simulate API call
+      
       await new Promise(resolve => setTimeout(resolve, 1000));
       login(credentials);
     } catch (err) {

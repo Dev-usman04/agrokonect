@@ -104,11 +104,10 @@ const ProductForm = ({ editProduct, setEditProduct }) => {
 
   return (
     <div className="relative group">
-      {/* Background Glow Effect */}
+   
       <div className="absolute inset-0 bg-gradient-to-r from-emerald-500/10 via-cyan-500/10 to-violet-500/10 rounded-3xl blur-2xl opacity-50 group-hover:opacity-75 transition-all duration-500"></div>
       
       <div className="relative bg-slate-800/30 backdrop-blur-xl border border-slate-700/50 rounded-3xl p-8 hover:border-slate-600/50 transition-all duration-300">
-        {/* Header */}
         <div className="flex items-center justify-between mb-8">
           <div className="flex items-center space-x-3">
             <div className="p-3 bg-gradient-to-br from-emerald-500/20 to-cyan-500/20 rounded-2xl border border-emerald-500/30">
@@ -125,7 +124,7 @@ const ProductForm = ({ editProduct, setEditProduct }) => {
           </div>
         </div>
 
-        {/* Success Message */}
+        
         {showSuccess && (
           <div className="mb-6 relative overflow-hidden">
             <div className="bg-gradient-to-r from-emerald-500/20 to-green-500/20 border border-emerald-500/30 rounded-2xl p-4 backdrop-blur-sm">
@@ -143,7 +142,7 @@ const ProductForm = ({ editProduct, setEditProduct }) => {
         )}
 
         <div className="space-y-6">
-          {/* Input Fields Grid */}
+         
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {formFields.map((field) => (
               <div key={field.name} className="group/field relative">
@@ -168,7 +167,7 @@ const ProductForm = ({ editProduct, setEditProduct }) => {
             ))}
           </div>
 
-          {/* Category Selection */}
+         
           <div className="relative group/field">
             <div className="relative">
               <div className="absolute left-4 top-1/2 transform -translate-y-1/2 p-2 bg-slate-700/50 rounded-lg text-amber-400">
@@ -197,7 +196,7 @@ const ProductForm = ({ editProduct, setEditProduct }) => {
             </div>
           </div>
 
-          {/* Description Field */}
+       
           <div className="relative group/field">
             <div className="relative">
               <div className="absolute left-4 top-6 p-2 bg-slate-700/50 rounded-lg text-violet-400">
@@ -214,7 +213,7 @@ const ProductForm = ({ editProduct, setEditProduct }) => {
             </div>
           </div>
 
-          {/* Submit Button and Form Tips */}
+         
           <>
             <div className="pt-4 flex gap-2">
               <button
@@ -248,7 +247,7 @@ const ProductForm = ({ editProduct, setEditProduct }) => {
                 </button>
               )}
             </div>
-            {/* Form Tips */}
+           
             <div className="mt-6 p-4 bg-slate-700/20 rounded-2xl border border-slate-600/30">
               <div className="flex items-start space-x-3">
                 <div className="p-1 bg-cyan-500/20 rounded-lg">
